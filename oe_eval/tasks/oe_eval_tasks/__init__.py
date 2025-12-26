@@ -62,6 +62,7 @@ from . import (
     squad_mc,
     triviaqa,
     truthfulqa,
+    winogender,
     winogrande,
     zebralogic,
 )
@@ -235,6 +236,8 @@ TASK_REGISTRY: Dict[str, Type[Task]] = {
     "triviaqa": triviaqa.TriviaQA,
     "truthfulqa": truthfulqa.TruthfulQA,
     **create_core_tydiqa_tasks(),
+    "winogender": winogender.Winogender,
+    "winogender:mc": winogender.WinogenderMC,
     "winogrande": winogrande.Winogrande,
     "winogrande:mc": winogrande.WinograndeMC,
     **create_core_zero_scrolls_tasks(),

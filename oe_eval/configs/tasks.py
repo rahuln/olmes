@@ -2913,6 +2913,24 @@ TASK_CONFIGS.update(
                 "regimes": ["OLMo-v1"],
             },
         },
+        "winogender:rc::olmes": {
+            "task_name": "winogender",
+            "split": "test",
+            "primary_metric": "acc_raw",
+            "num_shots": 0,
+            "metadata": {
+                "regimes": ["OLMES-v0.1"],
+            },
+        },
+        "winogender:mc::olmes": {
+            "task_name": "winogender:mc",
+            "split": "test",
+            "primary_metric": "acc_raw",
+            "num_shots": 0,
+            "metadata": {
+                "regimes": ["OLMES-v0.1"],
+            },
+        },
         "winogrande:rc::olmes": {
             "task_name": "winogrande",
             "split": "validation",
