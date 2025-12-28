@@ -2913,6 +2913,24 @@ TASK_CONFIGS.update(
                 "regimes": ["OLMo-v1"],
             },
         },
+        "winobias:rc::olmes": {
+            "task_name": "winobias",
+            "split": "test",
+            "primary_metric": "acc_raw",
+            "num_shots": 0,
+            "metadata": {
+                "regimes": ["OLMES-v0.1"],
+            },
+        },
+        "winobias:mc::olmes": {
+            "task_name": "winobias:mc",
+            "split": "test",
+            "primary_metric": "acc_raw",
+            "num_shots": 0,
+            "metadata": {
+                "regimes": ["OLMES-v0.1"],
+            },
+        },
         "winogender:rc::olmes": {
             "task_name": "winogender",
             "split": "test",
